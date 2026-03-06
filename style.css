@@ -123,10 +123,24 @@ h1.hero-title {
     line-height: 1.6;
 }
 
+/* 正文内的优雅超链接样式 */
+.text-link {
+    color: var(--accent-blue);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    border-bottom: 1px solid transparent;
+}
+
+.text-link:hover {
+    color: var(--accent-blue-hover);
+    border-bottom: 1px solid var(--accent-blue-hover);
+}
+
 .hero-photo img {
     width: 240px;
     height: 240px;
-    border-radius: 50%; /* 圆形头像，如果想用圆角方形可以改为 24px */
+    border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 12px 32px rgba(0,0,0,0.08);
 }
@@ -171,7 +185,6 @@ h1.hero-title {
     box-shadow: 0 10px 32px rgba(0, 0, 0, 0.08);
 }
 
-/* 带有 Logo 的卡片内部布局 */
 .card-layout {
     display: flex;
     gap: 1.5rem;
@@ -181,7 +194,7 @@ h1.hero-title {
 .entity-logo {
     width: 64px;
     height: 64px;
-    border-radius: 12px; /* Logo的圆角 */
+    border-radius: 12px;
     object-fit: contain;
     background-color: #fff;
     border: 1px solid var(--border-color);
@@ -308,18 +321,4 @@ footer {
     color: var(--text-secondary);
     font-size: 0.85rem;
     margin-top: 2rem;
-}
-
-/* Inline text links in Hero Section */
-.text-link {
-    color: var(--accent-blue);
-    text-decoration: none;
-    font-weight: 500;
-    transition: all 0.2s ease;
-    border-bottom: 1px solid transparent;
-}
-
-.text-link:hover {
-    color: var(--accent-blue-hover);
-    border-bottom: 1px solid var(--accent-blue-hover);
 }
