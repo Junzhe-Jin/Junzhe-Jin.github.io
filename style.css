@@ -1,6 +1,9 @@
+/* 引入科技感字体 Plus Jakarta Sans */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
 /* Apple-style Variables */
 :root {
-    --bg-color: #f5f5f7; /* Apple signature light gray background */
+    --bg-color: #f5f5f7; 
     --card-bg: #ffffff;
     --text-main: #1d1d1f;
     --text-secondary: #86868b;
@@ -16,19 +19,19 @@
 }
 
 body {
-    /* Using Apple's system font stack for the best native look */
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    /* 优先使用高定字体，其次调用苹果系统原生字体 */
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
     background-color: var(--bg-color);
     color: var(--text-main);
     line-height: 1.5;
-    -webkit-font-smoothing: antialiased; /* Makes text look sharper */
+    -webkit-font-smoothing: antialiased; 
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-/* --- Navigation Bar (Frosted Glass) --- */
+/* --- Navigation Bar --- */
 .navbar {
     position: fixed;
     top: 0;
@@ -52,7 +55,7 @@ html {
 
 .logo {
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 700;
     text-decoration: none;
     color: var(--text-main);
     letter-spacing: -0.02em;
@@ -68,8 +71,8 @@ html {
 .nav-links a {
     text-decoration: none;
     color: var(--text-main);
-    font-size: 0.85rem;
-    font-weight: 400;
+    font-size: 0.9rem;
+    font-weight: 500;
     transition: color 0.2s ease;
 }
 
@@ -77,15 +80,24 @@ html {
     color: var(--accent-blue);
 }
 
-.cv-link {
-    color: var(--accent-blue) !important;
-}
-
-/* --- Main Container & Typography --- */
+/* --- Main Container --- */
 .container {
     max-width: 900px;
     margin: 0 auto;
-    padding: 120px 2rem 4rem; /* Top padding accounts for navbar */
+    padding: 120px 2rem 4rem; 
+}
+
+/* --- Hero Section (Personal Info & Photo) --- */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    margin-bottom: 3rem;
+}
+
+.hero-text {
+    flex: 1;
 }
 
 h1.hero-title {
@@ -98,31 +110,36 @@ h1.hero-title {
 
 .hero-subtitle {
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 500;
     color: var(--text-secondary);
     letter-spacing: -0.01em;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .hero-desc {
     font-size: 1.1rem;
     color: var(--text-secondary);
-    max-width: 650px;
     margin-bottom: 2rem;
     line-height: 1.6;
 }
 
-/* --- Social Links --- */
+.hero-photo img {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%; /* 圆形头像，如果想用圆角方形可以改为 24px */
+    object-fit: cover;
+    box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+}
+
 .social-links {
     display: flex;
     gap: 1.5rem;
-    margin-bottom: 4rem;
 }
 
 .social-links a {
     text-decoration: none;
     color: var(--accent-blue);
-    font-weight: 500;
+    font-weight: 600;
     font-size: 0.95rem;
 }
 
@@ -133,13 +150,13 @@ h1.hero-title {
 /* --- Section Titles --- */
 .section-title {
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: -0.02em;
     margin: 4rem 0 1.5rem;
     color: var(--text-main);
 }
 
-/* --- Apple Style Cards --- */
+/* --- Cards with Logos --- */
 .card {
     background: var(--card-bg);
     border-radius: 20px;
@@ -154,7 +171,27 @@ h1.hero-title {
     box-shadow: 0 10px 32px rgba(0, 0, 0, 0.08);
 }
 
-/* Content inside cards */
+/* 带有 Logo 的卡片内部布局 */
+.card-layout {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.entity-logo {
+    width: 64px;
+    height: 64px;
+    border-radius: 12px; /* Logo的圆角 */
+    object-fit: contain;
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+    padding: 4px;
+}
+
+.card-main {
+    flex: 1;
+}
+
 .card-header {
     display: flex;
     justify-content: space-between;
@@ -164,20 +201,21 @@ h1.hero-title {
 
 .card-title {
     font-size: 1.25rem;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: -0.01em;
 }
 
 .card-subtitle {
     font-size: 1rem;
     color: var(--text-main);
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 0.5rem;
 }
 
 .card-date {
     font-size: 0.9rem;
     color: var(--text-secondary);
+    font-weight: 500;
 }
 
 .card-text {
@@ -189,15 +227,15 @@ h1.hero-title {
 /* --- Buttons --- */
 .btn {
     display: inline-block;
-    padding: 8px 16px;
+    padding: 8px 18px;
     margin-top: 1rem;
     margin-right: 0.5rem;
     background-color: var(--bg-color);
     color: var(--text-main);
     text-decoration: none;
     font-size: 0.85rem;
-    font-weight: 500;
-    border-radius: 999px; /* Pill shape */
+    font-weight: 600;
+    border-radius: 999px;
     transition: all 0.2s ease;
 }
 
@@ -223,7 +261,7 @@ h1.hero-title {
 
 .project-card {
     background: var(--card-bg);
-    border-radius: 20px;
+    border-radius: 24px;
     overflow: hidden;
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
     transition: transform 0.3s ease;
@@ -236,7 +274,7 @@ h1.hero-title {
 
 .project-img {
     width: 100%;
-    height: 220px;
+    height: 240px;
     object-fit: cover;
     background-color: #eee;
 }
@@ -245,7 +283,25 @@ h1.hero-title {
     padding: 2rem;
 }
 
-/* --- Footer --- */
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 2rem;
+    }
+    .social-links {
+        justify-content: center;
+    }
+    .card-layout {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .card-header {
+        flex-direction: column;
+    }
+}
+
 footer {
     text-align: center;
     padding: 3rem;
