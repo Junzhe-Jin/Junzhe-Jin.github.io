@@ -309,3 +309,17 @@ footer {
     font-size: 0.85rem;
     margin-top: 2rem;
 }
+
+/* Inline text links in Hero Section */
+.text-link {
+    color: var(--accent-blue);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    border-bottom: 1px solid transparent;
+}
+
+.text-link:hover {
+    color: var(--accent-blue-hover);
+    border-bottom: 1px solid var(--accent-blue-hover);
+}
