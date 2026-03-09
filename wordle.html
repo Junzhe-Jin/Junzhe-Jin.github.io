@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle Difficulty Assessment - Junzhe JIN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Junzhe JIN.</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#publications">Publications</a></li>
+                <li><a href="projects.html" style="color: var(--accent-blue);">Research Projects</a></li>
+                <li><a href="photography.html">Photography</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container" style="max-width: 800px; padding-top: 140px;">
+        
+        <a href="projects.html" style="color: var(--text-secondary); text-decoration: none; font-weight: 500; font-size: 0.9rem;">← Back to Projects</a>
+        <h1 class="hero-title" style="margin-top: 1.5rem; font-size: 2.5rem;">Wordle Difficulty Assessment Model</h1>
+        <p style="color: var(--text-secondary); font-size: 1.1rem; margin-top: 0.5rem; margin-bottom: 2rem;">
+            A Machine Learning Approach for Puzzle Difficulty Prediction.
+        </p>
+
+        <div style="display: flex; gap: 1rem; margin-bottom: 3rem;">
+            <a href="https://ieeexplore.ieee.org/abstract/document/10393779" target="_blank" class="btn btn-primary" style="margin-top: 0;">DOI</a>
+        </div>
+
+        <div class="about-text">
+            <h2 class="section-title" style="margin-top: 0; font-size: 1.5rem;">Background & Motivation</h2>
+            <p>
+                The word-guessing game Wordle gained massive global popularity, but the inherent difficulty of the daily puzzles varies significantly based on lexical properties and letter frequencies. Understanding and scientifically assessing the difficulty of any given 5-letter word can provide developers with actionable insights to curate puzzle sequencing, balance daily challenge levels, and ultimately optimize player engagement and user experience. 
+            </p>
+
+            <h2 class="section-title" style="font-size: 1.5rem;">Algorithm Design & Implementation</h2>
+            <p>
+                We designed a multi-output regression pipeline using a Regressor Chain of Decision Trees to forecast the distribution of player success outcomes (the percentage of players solving the puzzle in 1 to 6 attempts) for any specific word. The model extracts independent variables such as letter frequency, word frequency, the number of common letter combinations, and repeated letters.
+            </p>
+            <p>
+                To categorize the overall challenge, we applied K-Means++ clustering to the predicted attempt distributions, successfully revealing distinct clusters that classify word difficulty into three levels: easy, medium, and difficult. Furthermore, to refine the assessment and improve generalization, we optimized a K-Nearest Neighbors (KNN) regression model using Particle Swarm Optimization (PSO). 
+            </p>
+
+            <h2 class="section-title" style="font-size: 1.5rem;">Research Value & Impact</h2>
+            <p>
+                The optimized model achieved over 90% accuracy in the automatic difficulty labeling of unseen words. From a data science perspective, this study demonstrates the effectiveness of combining multi-target regression with heuristic optimization algorithms (PSO) to solve complex, multi-variable distribution prediction problems. From an application perspective, it offers a robust, quantitative methodology for game design, allowing creators to programmatically assess and adjust content difficulty based on historical player data.
+            </p>
+            
+            <div style="margin-top: 4rem; padding: 2rem; background-color: #f5f5f7; border-radius: 16px; text-align: center;">
+                <p style="color: var(--text-secondary); font-size: 1.05rem; font-style: italic; margin: 0;">
+                    Research Intern | Supervised by Prof. Jichao Qiao | Northwestern Polytechnical University
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Junzhe JIN.</p>
+    </footer>
+</body>
+</html>
