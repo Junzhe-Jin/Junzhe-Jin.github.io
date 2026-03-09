@@ -1,1 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VisionNav - Junzhe JIN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Junzhe JIN.</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#publications">Publications</a></li>
+                <li><a href="projects.html" style="color: var(--accent-blue);">Research Projects</a></li>
+                <li><a href="photography.html">Photography</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container" style="max-width: 800px; padding-top: 140px;">
+        
+        <a href="projects.html" style="color: var(--text-secondary); text-decoration: none; font-weight: 500; font-size: 0.9rem;">← Back to Projects</a>
+        <h1 class="hero-title" style="margin-top: 1.5rem; font-size: 2.5rem;">VisionNav: IoT Navigation Companion</h1>
+        <p style="color: var(--text-secondary); font-size: 1.1rem; margin-top: 0.5rem; margin-bottom: 2rem;">
+            Vibration-Guided Haptic Navigation for Complex Environments.
+        </p>
+        
+        <div style="display: flex; gap: 1rem; margin-bottom: 3rem;">
+            <a href="https://youtu.be/vuFJ1KG2__Q?si=IQ4sGhaLGpkiZaiX" target="_blank" class="btn btn-primary" style="margin-top: 0;">Watch Video</a>
+        </div>
+
+        <img src="project_visionnav.jpg" alt="VisionNav System" style="width: 100%; border-radius: 16px; margin-bottom: 3rem; box-shadow: 0 8px 30px rgba(0,0,0,0.06);">
+
+        <div class="about-text">
+            <h2 class="section-title" style="margin-top: 0; font-size: 1.5rem;">Background & Motivation</h2>
+            <p>
+                Navigating complex urban environments relies heavily on visual and auditory cues, posing significant challenges for visually impaired individuals or people navigating noisy, attention-demanding settings. Traditional audio-based navigation apps can be intrusive, socially awkward, or easily drowned out by traffic noise. <strong>VisionNav</strong> was conceptualized to address these accessibility barriers by translating environmental spatial data and routing instructions into intuitive, non-visual haptic feedback.
+            </p>
+
+            <h2 class="section-title" style="font-size: 1.5rem;">System Architecture & Implementation</h2>
+            <p>
+                VisionNav is an end-to-end IoT solution that bridges smartphone intelligence with wearable haptic actuators. The system leverages the smartphone's camera to run a lightweight YOLOv8 computer vision model for real-time object detection and sidewalk segmentation, while utilizing the Google Maps API for routing. This spatial data is transmitted instantly via an MQTT messaging broker to wearable ESP32-based hardware. 
+            </p>
+            <p>
+                We designed a specialized haptic vocabulary using dual M5Stack haptic actuators (Eccentric Rotating Mass motors) placed on the user's left and right sides: distinct vibration patterns indicate upcoming turns, while vibration intensity scales dynamically based on proximity to impending obstacles, alerting the user to stop or alter their course.
+            </p>
+
+            <h2 class="section-title" style="font-size: 1.5rem;">HCI Contribution & Research Value</h2>
+            <p>
+                VisionNav strongly contributes to the HCI subfields of inclusive design and embodied interaction. By decoupling navigation from overloaded visual and auditory senses and offloading it to the haptic channel, the system successfully reduces users' cognitive load. Through user testing in varied lighting and environmental conditions, VisionNav demonstrated that intelligent tactile feedback can empower users to maintain environmental awareness, enhancing both the safety and confidence of spatial navigation for accessibility-constrained populations.
+            </p>
+            
+            <div style="margin-top: 4rem; padding: 2rem; background-color: #f5f5f7; border-radius: 16px; text-align: center;">
+                <p style="color: var(--text-secondary); font-size: 1.05rem; font-style: italic; margin: 0;">
+                    "This project was completed under the guidance of the late Niels Olof Bouvin, a truly wonderful and kind person, whom we dearly miss."
+                </p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Junzhe JIN.</p>
+    </footer>
+</body>
+</html>
