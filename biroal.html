@@ -36,30 +36,28 @@
         <img src="project_bioral.jpg" alt="BIOral System" style="width: 100%; border-radius: 16px; margin-bottom: 3rem; box-shadow: 0 8px 30px rgba(0,0,0,0.06);">
 
         <div class="about-text">
-            <h2 class="section-title" style="margin-top: 0; font-size: 1.5rem;">Abstract</h2>
+            <h2 class="section-title" style="margin-top: 0; font-size: 1.5rem;">Background & Motivation</h2>
             <p>
-                Saliva contains crucial physiological biomarkers, yet continuous and unobtrusive monitoring remains a challenge. Existing intraoral interfaces primarily focus on physical interactions rather than biochemical sensing. We introduce <strong>BIOral</strong>, a modular intraoral bio-interactive interface designed to bridge this gap. By integrating stimuli-responsive biopolymers with a custom sensing pipeline, BIOral enables both continuous salivary pH monitoring and programmable on-demand drug delivery.
+                Saliva contains crucial physiological biomarkers, yet continuous and unobtrusive monitoring remains a challenge in everyday settings. In the field of Human-Computer Interaction (HCI), existing intraoral interfaces primarily focus on physical interactions—such as tongue gestures or teeth biting—rather than biochemical sensing. Monitoring oral health typically requires bulky equipment or frequent clinical visits. We designed <strong>BIOral</strong> to bridge this gap, aiming to create an unobtrusive, wearable platform inside the mouth that seamlessly integrates health monitoring into users' daily lives.
             </p>
 
-            <h2 class="section-title" style="font-size: 1.5rem;">Hardware & CapCell Design</h2>
+            <h2 class="section-title" style="font-size: 1.5rem;">System Architecture & Implementation</h2>
             <p>
-                The hardware architecture relies on a custom SLA 3D-printed dental retainer made from biocompatible Dental SG resin. To ensure safety and adaptability, we developed <strong>CapCell</strong>, a modular capsule system with a threaded locking mechanism. This allows users to easily swap sensing or drug-release modules without replacing the entire retainer. The core electronics include an ultra-small nRF52840 microcontroller and a digital color sensor (TCS34725) securely encapsulated using food-grade epoxy.
+                The hardware relies on a custom SLA 3D-printed dental retainer made from biocompatible resin, integrating a digital color sensor (TCS34725) securely encapsulated using food-grade epoxy. To ensure safety and adaptability, we developed <strong>CapCell</strong>, a modular capsule system with a threaded locking mechanism, allowing users to easily swap sensing or drug-release modules. 
+            </p>
+            <p>
+                For pH sensing, we fabricated edible hydrogels using anthocyanin and κ-carrageenan, whose colorimetric shifts are captured by the embedded RGB sensor. We implemented a robust signal-processing algorithm that normalizes the RGB readings to provide highly accurate pH estimates (ranging from pH 2 to 10). Furthermore, by parametrically tuning the geometric aperture of the CapCell, we engineered vitamin-infused hydrogels for programmable, sustained intraoral drug diffusion.
             </p>
 
-            <h2 class="section-title" style="font-size: 1.5rem;">Colorimetric Sensing Pipeline</h2>
+            <h2 class="section-title" style="font-size: 1.5rem;">HCI Contribution & Research Value</h2>
             <p>
-                For pH sensing, we fabricated edible hydrogels by combining anthocyanin and κ-carrageenan. As the saliva pH changes, the hydrogel changes color. BIOral's embedded RGB sensor captures these colorimetric shifts. We implemented a robust signal-processing algorithm that normalizes the RGB readings and maps them to highly accurate pH estimates (ranging from pH 2 to 10), overcoming challenges like oral cavity darkness and sensor variations.
-            </p>
-
-            <h2 class="section-title" style="font-size: 1.5rem;">Programmable Drug Release</h2>
-            <p>
-                Beyond sensing, BIOral acts as an active therapeutic device. We engineered vitamin-infused hydrogels housed within the CapCell. By parametrically tuning the geometric aperture of the CapCell during the 3D printing process, we achieved programmable, sustained intraoral drug diffusion. In-vitro evaluations demonstrated predictable release durations ranging from 1 to 3.75 hours, proving its efficacy for clinical dental applications.
+                BIOral expands the boundaries of intraoral interfaces in HCI from purely mechanical inputs to advanced bio-interactive systems. By enabling hands-free, eyes-free continuous health monitoring and programmable on-demand drug delivery, this research demonstrates how miniaturized wearable technology can be seamlessly integrated into the human body. It provides a novel methodology for researchers and clinicians to design inclusive, health-oriented interactive systems that improve personal well-being without increasing user cognitive load.
             </p>
         </div>
     </main>
 
     <footer>
-        <p>&copy; 2026 Junzhe JIN. Designed with simplicity.</p>
+        <p>&copy; 2026 Junzhe JIN.</p>
     </footer>
 </body>
 </html>
