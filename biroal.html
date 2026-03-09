@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIOral - Junzhe JIN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Junzhe JIN.</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#publications">Publications</a></li>
+                <li><a href="projects.html" style="color: var(--accent-blue);">Research Projects</a></li>
+                <li><a href="photography.html">Photography</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container" style="max-width: 800px; padding-top: 140px;">
+        
+        <a href="projects.html" style="color: var(--text-secondary); text-decoration: none; font-weight: 500; font-size: 0.9rem;">← Back to Projects</a>
+        <h1 class="hero-title" style="margin-top: 1.5rem; font-size: 2.5rem;">BIOral: Modular Intraoral Interfaces</h1>
+        <p style="color: var(--text-secondary); font-size: 1.1rem; margin-top: 0.5rem; margin-bottom: 2rem;">
+            Continuous Saliva Biomarker Sensing and On-Demand Drug Delivery.
+        </p>
+        
+        <div style="display: flex; gap: 1rem; margin-bottom: 3rem;">
+            <a href="https://dl.acm.org/doi/full/10.1145/3706599.3721178" target="_blank" class="btn btn-primary" style="margin-top: 0;">ACM Link</a>
+            <a href="https://youtu.be/y7eXP4J2Q4s?si=vqWY_oiJEIljSOa9" target="_blank" class="btn" style="margin-top: 0;">Watch Video</a>
+        </div>
+
+        <img src="project_bioral.jpg" alt="BIOral System" style="width: 100%; border-radius: 16px; margin-bottom: 3rem; box-shadow: 0 8px 30px rgba(0,0,0,0.06);">
+
+        <div class="about-text">
+            <h2 class="section-title" style="margin-top: 0; font-size: 1.5rem;">Abstract</h2>
+            <p>
+                Saliva contains crucial physiological biomarkers, yet continuous and unobtrusive monitoring remains a challenge. Existing intraoral interfaces primarily focus on physical interactions rather than biochemical sensing. We introduce <strong>BIOral</strong>, a modular intraoral bio-interactive interface designed to bridge this gap. By integrating stimuli-responsive biopolymers with a custom sensing pipeline, BIOral enables both continuous salivary pH monitoring and programmable on-demand drug delivery.
+            </p>
+
+            <h2 class="section-title" style="font-size: 1.5rem;">Hardware & CapCell Design</h2>
+            <p>
+                The hardware architecture relies on a custom SLA 3D-printed dental retainer made from biocompatible Dental SG resin. To ensure safety and adaptability, we developed <strong>CapCell</strong>, a modular capsule system with a threaded locking mechanism. This allows users to easily swap sensing or drug-release modules without replacing the entire retainer. The core electronics include an ultra-small nRF52840 microcontroller and a digital color sensor (TCS34725) securely encapsulated using food-grade epoxy.
+            </p>
+
+            <h2 class="section-title" style="font-size: 1.5rem;">Colorimetric Sensing Pipeline</h2>
+            <p>
+                For pH sensing, we fabricated edible hydrogels by combining anthocyanin and κ-carrageenan. As the saliva pH changes, the hydrogel changes color. BIOral's embedded RGB sensor captures these colorimetric shifts. We implemented a robust signal-processing algorithm that normalizes the RGB readings and maps them to highly accurate pH estimates (ranging from pH 2 to 10), overcoming challenges like oral cavity darkness and sensor variations.
+            </p>
+
+            <h2 class="section-title" style="font-size: 1.5rem;">Programmable Drug Release</h2>
+            <p>
+                Beyond sensing, BIOral acts as an active therapeutic device. We engineered vitamin-infused hydrogels housed within the CapCell. By parametrically tuning the geometric aperture of the CapCell during the 3D printing process, we achieved programmable, sustained intraoral drug diffusion. In-vitro evaluations demonstrated predictable release durations ranging from 1 to 3.75 hours, proving its efficacy for clinical dental applications.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Junzhe JIN. Designed with simplicity.</p>
+    </footer>
+</body>
+</html>
