@@ -241,8 +241,6 @@ html {
     border-radius: 10px;
     object-fit: contain;
     background-color: #fff;
-    border: 1px solid var(--border-color);
-    padding: 4px;
 }
 
 .card-main {
