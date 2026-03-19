@@ -320,6 +320,10 @@ html {
     overflow: hidden;
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
     transition: transform 0.3s ease;
+    
+    /* 核心修复：让卡片变成纵向 Flex 容器 */
+    display: flex;
+    flex-direction: column;
 }
 
 .project-card:hover {
@@ -336,6 +340,11 @@ html {
 
 .project-content {
     padding: 2rem;
+    
+    /* 核心修复：让内容区填满剩下的高度 */
+    display: flex;
+    flex-direction: column;
+    flex: 1; 
 }
 
 /* --- 摄影作品网格 (瀑布流/Masonry布局) --- */
