@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Main navigation">
         <div class="nav-container">
             <a href="index.html" class="logo">Junzhe JIN.</a>
             <ul class="nav-links">
-                <li><a href="index.html" style="color: var(--accent-blue);">Home</a></li>
+                <li><a href="index.html" aria-current="page">Home</a></li>
                 <li><a href="#publications">Publications</a></li>
                 <li><a href="projects.html">Research Projects</a></li>
                 <li><a href="photography.html">Photography</a></li>
@@ -31,22 +32,25 @@
             <ul class="sidebar-info">
                 <li>📍 Shenzhen, China</li>
                 <li>✉️ <a href="mailto:jbk20020504@gmail.com">Email</a></li>
-                <li>🎓 <a href="https://scholar.google.com.hk/citations?user=QoTMexYAAAAJ&hl=zh-CN" target="_blank">Google Scholar</a></li>
-                <li>💼 <a href="http://linkedin.com/in/junzhe-jin-3252b0295" target="_blank">LinkedIn</a></li>
+                <li>🎓 <a href="https://scholar.google.com.hk/citations?user=QoTMexYAAAAJ&hl=zh-CN" target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
+                <li>💼 <a href="http://linkedin.com/in/junzhe-jin-3252b0295" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
                 <li>⚽ Soccer</li>
                 <li>📷 Photography</li>
                 <li>🎻 Violin</li>
             </ul>
+            <a class="btn" href="CV.pdf">Curriculum vitae ↗</a>
         </aside>
 
-        <main class="content-area">
+        <main id="main-content" class="content-area">
             
             <section id="about" class="about-text">
+                <p class="eyebrow">Human–Computer Interaction</p>
+                <h2 class="intro-title">Research, interfaces &amp; everyday life.</h2>
                 <p>
-                    👋 Hi! I am a Visiting Student in <a href="https://www.hci-xgroup.com/" target="_blank" class="text-link">X-Group</a> at the School of Design, <a href="https://www.sustech.edu.cn/en/" target="_blank" class="text-link">Southern University of Science and Technology (SUSTech)</a>, supervised by <a href="https://www.hci-xgroup.com/about-us" target="_blank" class="text-link">Assistant Prof. Xueliang Li</a>. My current project explores how shape change, colour and placement can support the expression of everyday support needs and personal boundaries.
+                    👋 Hi! I am a Visiting Student in <a href="https://www.hci-xgroup.com/" target="_blank" rel="noopener noreferrer" class="text-link">X-Group</a> at the School of Design, <a href="https://www.sustech.edu.cn/en/" target="_blank" rel="noopener noreferrer" class="text-link">Southern University of Science and Technology (SUSTech)</a>, supervised by <a href="https://www.hci-xgroup.com/about-us" target="_blank" rel="noopener noreferrer" class="text-link">Assistant Prof. Xueliang Li</a>. My current project explores how shape change, colour and placement can support the expression of everyday support needs and personal boundaries.
                 </p>
                 <p>
-                    I completed my Master's degree in Computer Science at <a href="https://cs.au.dk/" target="_blank" class="text-link">Aarhus University</a> in August 2026. During my Master's studies, I worked with <a href="https://interactivematterlab.org/profile.html" target="_blank" class="text-link">Assistant Prof. Michael Wessely</a> at the <a href="https://interactivematterlab.org/index.html" target="_blank" class="text-link">Interactive Matter Lab</a> and conducted my thesis research with <a href="https://www.ousmet.com/" target="_blank" class="text-link">Associate Prof. Oussama Metatla</a> at the Diverse-ability Interaction Lab, part of <a href="https://biglab.co.uk/" target="_blank" class="text-link">Bristol Interaction Group</a> at the <a href="https://www.bristol.ac.uk/" target="_blank" class="text-link">University of Bristol</a>. I received my Bachelor's degree in Software Engineering from <a href="https://en.nwpu.edu.cn/" target="_blank" class="text-link">Northwestern Polytechnical University</a>.
+                    I completed my Master's degree in Computer Science at <a href="https://cs.au.dk/" target="_blank" rel="noopener noreferrer" class="text-link">Aarhus University</a> in August 2026. During my Master's studies, I worked with <a href="https://interactivematterlab.org/profile.html" target="_blank" rel="noopener noreferrer" class="text-link">Assistant Prof. Michael Wessely</a> at the <a href="https://interactivematterlab.org/index.html" target="_blank" rel="noopener noreferrer" class="text-link">Interactive Matter Lab</a> and conducted my thesis research with <a href="https://www.ousmet.com/" target="_blank" rel="noopener noreferrer" class="text-link">Associate Prof. Oussama Metatla</a> at the Diverse-ability Interaction Lab, part of <a href="https://biglab.co.uk/" target="_blank" rel="noopener noreferrer" class="text-link">Bristol Interaction Group</a> at the <a href="https://www.bristol.ac.uk/" target="_blank" rel="noopener noreferrer" class="text-link">University of Bristol</a>. I received my Bachelor's degree in Software Engineering from <a href="https://en.nwpu.edu.cn/" target="_blank" rel="noopener noreferrer" class="text-link">Northwestern Polytechnical University</a>.
                 </p>
                 <p>
                     My research interest is <strong>Human-computer Interaction</strong>. I am always open to new connections and potential collaborations. Feel free to drop me an email!
@@ -54,7 +58,7 @@
             </section>
 
             <section id="education">
-                <h2 class="section-title">🎒 Education</h2>
+                <h2 class="section-title">Education</h2>
                 
                 <div class="card">
                     <div class="card-layout">
@@ -84,7 +88,7 @@
             </section>
 
             <section id="experience">
-                <h2 class="section-title">🔬 Research Experience</h2>
+                <h2 class="section-title">Research Experience</h2>
 
                 <div class="card">
                     <div class="card-layout">
@@ -130,20 +134,20 @@
             </section>
 
             <section id="publications">
-                <h2 class="section-title">📄 Publications</h2>
+                <h2 class="section-title">Publications</h2>
 
                 <div class="card">
                     <h3 class="card-title" style="margin-bottom: 8px;">Demonstration of BIOral: Fabricating Intraoral PH Sensor for Continuous Health Monitoring</h3>
                     <p class="card-text" style="color: var(--text-main);">Yijing Jiang, <strong>Junzhe Jin</strong>, Yunhui Song, Haiyang Xu, Michael Wessely</p>
                     <p class="card-text" style="margin-bottom: 12px;"><em>Extended Abstracts of the CHI Conference on Human Factors in Computing Systems (CHI' EA) 2025</em></p>
-                    <a href="https://dl.acm.org/doi/full/10.1145/3706599.3721178" target="_blank" class="btn btn-primary">DOI</a>
+                    <a href="https://dl.acm.org/doi/full/10.1145/3706599.3721178" target="_blank" rel="noopener noreferrer" class="btn btn-primary">DOI</a>
                 </div>
 
                 <div class="card">
                     <h3 class="card-title" style="margin-bottom: 8px;">A Study on the Development of Wordle Based on Machine Learning</h3>
                     <p class="card-text" style="color: var(--text-main);"><strong>Junzhe Jin</strong>, Yitian Yin</p>
                     <p class="card-text" style="margin-bottom: 12px;"><em>International Conference on Machine Learning, Algorithms and Artificial Intelligence (MLAAI) 2023</em></p>
-                    <a href="https://ieeexplore.ieee.org/abstract/document/10393779" target="_blank" class="btn btn-primary">DOI</a>
+                    <a href="https://ieeexplore.ieee.org/abstract/document/10393779" target="_blank" rel="noopener noreferrer" class="btn btn-primary">DOI</a>
                 </div>
             </section>
 

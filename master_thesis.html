@@ -7,20 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Main navigation">
         <div class="nav-container">
             <a href="index.html" class="logo">Junzhe JIN.</a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html#publications">Publications</a></li>
-                <li><a href="projects.html" style="color: var(--accent-blue);">Research Projects</a></li>
+                <li><a href="projects.html" aria-current="true">Research Projects</a></li>
                 <li><a href="photography.html">Photography</a></li>
             </ul>
         </div>
     </nav>
 
-    <main class="container" style="max-width: 800px; padding-top: 140px;">
+    <main id="main-content" class="container project-detail">
         
         <a href="projects.html" style="color: var(--text-secondary); text-decoration: none; font-weight: 500; font-size: 0.9rem;">← Back to Projects</a>
         <h1 class="hero-title" style="margin-top: 1.5rem; font-size: 2.5rem; line-height: 1.1;">MultiMorph</h1>
@@ -28,7 +29,7 @@
             Investigating How Coloured Illumination Shapes the Affective Experience of Pneumatic Deformation.
         </p>
 
-        <img src="multimorph.webp" alt="MultiMorph prototype, pneumatic control system and participant tablet" style="width: 100%; border-radius: 16px; margin-bottom: 3rem; box-shadow: 0 8px 30px rgba(0,0,0,0.06);">
+        <img src="multimorph.webp" alt="MultiMorph prototype, pneumatic control system and participant tablet" style="width: 100%; border-radius: 16px; margin-bottom: 3rem; ">
 
         <div class="about-text">
             
@@ -47,7 +48,7 @@
                 Movement rate was most clearly associated with arousal: 79% of participants gave higher average arousal ratings to the 1 Hz programme than to the 0.1 Hz programme. Blue paired with 0.1 Hz deformation increased pleasure relative to the same movement with the LEDs off. The predefined aligned dynamic set, red with 1 Hz and blue with 0.1 Hz, received higher perceived fit and pleasure ratings than the reversed pairings, with the slow comparison contributing most strongly. These findings support designing colour in relation to a particular deformation and considering activation, pleasure and perceived coherence as distinct aspects of the experience.
             </p>
             
-            <div style="margin-top: 2rem; padding: 1.5rem; background-color: rgba(0,0,0,0.03); border-radius: 12px; border-left: 4px solid var(--text-secondary);">
+            <div style="margin-top: 2rem; padding: 1.5rem; background-color: var(--card-bg); border-radius: 12px; border-left: 4px solid var(--text-secondary);">
                 <p style="color: var(--text-main); font-weight: 600; font-style: italic; font-size: 1rem; margin: 0; line-height: 1.6;">
                     Colour, movement and their coordination should be considered together when designing multisensory shape-changing experiences.
                 </p>

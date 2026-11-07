@@ -7,20 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Main navigation">
         <div class="nav-container">
             <a href="index.html" class="logo">Junzhe JIN.</a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html#publications">Publications</a></li>
-                <li><a href="projects.html" style="color: var(--accent-blue);">Research Projects</a></li>
+                <li><a href="projects.html" aria-current="page">Research Projects</a></li>
                 <li><a href="photography.html">Photography</a></li>
             </ul>
         </div>
     </nav>
 
-    <main class="container">
+    <main id="main-content" class="container">
 
         <h1 class="hero-title" style="margin-bottom: 3rem;">Research Projects</h1>
 
@@ -63,7 +64,7 @@
                     <p class="card-text">An interactive Human-AI system utilizing real-time NLP and explainable radar charts to reduce cognitive load and minimize trial-and-error during prompt engineering.</p>
 
                     <div style="display: flex; justify-content: flex-end; align-items: center; margin-top: auto; padding-top: 1.5rem;">
-                        <a href="https://medium.com/@202402602/smartprompt-guiding-you-to-better-ai-prompts-97fbe6f7ae6f" target="_blank" class="gray-link">Medium &nearr;</a>
+                        <a href="https://medium.com/@202402602/smartprompt-guiding-you-to-better-ai-prompts-97fbe6f7ae6f" target="_blank" rel="noopener noreferrer" class="gray-link">Medium &nearr;</a>
                     </div>
                 </div>
             </div>
@@ -77,7 +78,7 @@
                     <p class="card-text">Developed a modular intraoral bio-interactive interface enabling continuous saliva biomarker sensing and on-demand drug delivery via colorimetric processing.</p>
 
                     <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto; padding-top: 1.5rem;">
-                        <a href="https://youtu.be/y7eXP4J2Q4s?si=vqWY_oiJEIljSOa9" target="_blank" class="gray-link">Video &nearr;</a>
+                        <a href="https://youtu.be/y7eXP4J2Q4s?si=vqWY_oiJEIljSOa9" target="_blank" rel="noopener noreferrer" class="gray-link">Video &nearr;</a>
                         <a href="bioral.html" class="gray-link">Read more &rarr;</a>
                     </div>
                 </div>
@@ -92,7 +93,7 @@
                     <p class="card-text">Engineered a non-visual, haptic-based IoT navigation assistant integrating smartphone computer vision, MQTT messaging, and dual haptic actuators.</p>
 
                     <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto; padding-top: 1.5rem;">
-                        <a href="https://youtu.be/vuFJ1KG2__Q?si=IQ4sGhaLGpkiZaiX" target="_blank" class="gray-link">Video &nearr;</a>
+                        <a href="https://youtu.be/vuFJ1KG2__Q?si=IQ4sGhaLGpkiZaiX" target="_blank" rel="noopener noreferrer" class="gray-link">Video &nearr;</a>
                         <a href="visionnav.html" class="gray-link">Read more &rarr;</a>
                     </div>
                 </div>
@@ -124,7 +125,7 @@
             <p class="card-text">Designed a machine-learning model to predict Wordle puzzle difficulty by constructing a multi-output regression pipeline using a regressor chain of decision trees. Classified word difficulty using K-Means++ clustering and optimized a KNN regression model using Particle Swarm Optimization (PSO), achieving over 90% accuracy.</p>
 
             <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto; padding-top: 1.5rem;">
-                <a href="https://ieeexplore.ieee.org/abstract/document/10393779" target="_blank" class="gray-link">DOI &nearr;</a>
+                <a href="https://ieeexplore.ieee.org/abstract/document/10393779" target="_blank" rel="noopener noreferrer" class="gray-link">DOI &nearr;</a>
                 <a href="wordle.html" class="gray-link">Read more &rarr;</a>
             </div>
         </div>
