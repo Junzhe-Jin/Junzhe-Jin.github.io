@@ -7,20 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Main navigation">
         <div class="nav-container">
             <a href="index.html" class="logo">Junzhe JIN.</a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html#publications">Publications</a></li>
-                <li><a href="projects.html" style="color: var(--accent-blue);">Research Projects</a></li>
+                <li><a href="projects.html" aria-current="true">Research Projects</a></li>
                 <li><a href="photography.html">Photography</a></li>
             </ul>
         </div>
     </nav>
 
-    <main class="container" style="max-width: 800px; padding-top: 140px;">
+    <main id="main-content" class="container project-detail">
         
         <a href="projects.html" style="color: var(--text-secondary); text-decoration: none; font-weight: 500; font-size: 0.9rem;">← Back to Projects</a>
         <h1 class="hero-title" style="margin-top: 1.5rem; font-size: 2.5rem;">ECG Anomaly Detection</h1>
@@ -47,7 +48,7 @@
                 This unsupervised learning framework successfully isolates abnormal ECG patterns from normal physiological variations without relying on extensively labeled medical datasets. By effectively combining signal processing techniques (Wavelet Transform, DTW) with machine learning anomaly detection algorithms (LOF), this research provides a robust and scalable methodological foundation for automated healthcare monitoring and early-stage arrhythmia diagnosis in big data streams.
             </p>
             
-            <div style="margin-top: 4rem; padding: 2rem; background-color: #f5f5f7; border-radius: 16px; text-align: center;">
+            <div style="margin-top: 4rem; padding: 2rem; background-color: var(--card-bg); border-radius: 16px; text-align: center;">
                 <p style="color: var(--text-secondary); font-size: 1.05rem; font-style: italic; margin: 0;">
                     Participant | Supervised by Prof. Yue Zhao | Northwestern Polytechnical University
                 </p>
