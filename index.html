@@ -5,8 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Junzhe JIN</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        // Keep links to sections on the former homepage working.
+        const aboutSections = ["#about", "#education", "#experience", "#publications"];
+        if (aboutSections.includes(window.location.hash)) {
+            window.location.replace("about.html" + window.location.hash);
+        }
+    </script>
 </head>
-<body>
+<body class="home-page">
     <a class="skip-link" href="#main-content">Skip to content</a>
 
     <nav class="navbar" aria-label="Main navigation">
@@ -14,142 +21,25 @@
             <a href="index.html" class="logo">Junzhe JIN.</a>
             <ul class="nav-links">
                 <li><a href="index.html" aria-current="page">Home</a></li>
-                <li><a href="#publications">Publications</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="about.html#publications">Publications</a></li>
                 <li><a href="projects.html">Research Projects</a></li>
                 <li><a href="photography.html">Photography</a></li>
             </ul>
         </div>
     </nav>
 
-    <div class="main-wrapper">
-        
-        <aside class="sidebar">
-            <img src="profile.jpg" alt="Junzhe JIN" class="sidebar-photo">
-            <h1 class="sidebar-name">Junzhe JIN</h1>
-            <p class="sidebar-affil">Southern University of Science and Technology</p>
-            <p class="sidebar-title">Visiting Student | X-Group</p>
-            
-            <ul class="sidebar-info">
-                <li><span class="sidebar-icon" aria-hidden="true">📍</span><span>Shenzhen, China</span></li>
-                <li><span class="sidebar-icon" aria-hidden="true">✉️</span><a href="mailto:jbk20020504@gmail.com">Email</a></li>
-                <li><span class="sidebar-icon" aria-hidden="true">🎓</span><a href="https://scholar.google.com.hk/citations?user=QoTMexYAAAAJ&hl=zh-CN" target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
-                <li><span class="sidebar-icon" aria-hidden="true">💼</span><a href="http://linkedin.com/in/junzhe-jin-3252b0295" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                <li><span class="sidebar-icon" aria-hidden="true">⚽</span><span>Soccer</span></li>
-                <li><span class="sidebar-icon" aria-hidden="true">📷</span><span>Photography</span></li>
-                <li><span class="sidebar-icon" aria-hidden="true">🎻</span><span>Violin</span></li>
-            </ul>
-        </aside>
-
-        <main id="main-content" class="content-area">
-            
-            <section id="about" class="about-text">
-                <p>
-                    👋 Hi! I am a Visiting Student in <a href="https://www.hci-xgroup.com/" target="_blank" rel="noopener noreferrer" class="text-link">X-Group</a> at the School of Design, <a href="https://www.sustech.edu.cn/en/" target="_blank" rel="noopener noreferrer" class="text-link">Southern University of Science and Technology (SUSTech)</a>, supervised by <a href="https://www.hci-xgroup.com/about-us" target="_blank" rel="noopener noreferrer" class="text-link">Assistant Prof. Xueliang Li</a>. My current project explores how shape change, colour and placement can support the expression of everyday support needs and personal boundaries.
-                </p>
-                <p>
-                    I completed my Master's degree in Computer Science at <a href="https://cs.au.dk/" target="_blank" rel="noopener noreferrer" class="text-link">Aarhus University</a> in August 2026. During my Master's studies, I worked with <a href="https://interactivematterlab.org/profile.html" target="_blank" rel="noopener noreferrer" class="text-link">Assistant Prof. Michael Wessely</a> at the <a href="https://interactivematterlab.org/index.html" target="_blank" rel="noopener noreferrer" class="text-link">Interactive Matter Lab</a> and conducted my thesis research with <a href="https://www.ousmet.com/" target="_blank" rel="noopener noreferrer" class="text-link">Associate Prof. Oussama Metatla</a> at the Diverse-ability Interaction Lab, part of <a href="https://biglab.co.uk/" target="_blank" rel="noopener noreferrer" class="text-link">Bristol Interaction Group</a> at the <a href="https://www.bristol.ac.uk/" target="_blank" rel="noopener noreferrer" class="text-link">University of Bristol</a>. I received my Bachelor's degree in Software Engineering from <a href="https://en.nwpu.edu.cn/" target="_blank" rel="noopener noreferrer" class="text-link">Northwestern Polytechnical University</a>.
-                </p>
-                <p>
-                    My research interest is <strong>Human-computer Interaction</strong>. I am always open to new connections and potential collaborations. Feel free to drop me an email!
-                </p>
+    <main id="main-content" class="home-hero">
+        <div class="home-hero-inner">
+            <div class="home-portrait">
+                <img src="profile.jpg" alt="Junzhe JIN">
+            </div>
+            <section class="home-intro" aria-labelledby="home-title">
+                <h1 id="home-title">Hi, I'm Junzhe Jin.</h1>
+                <p>I'm a Visiting Student in X-Group at Southern University of Science and Technology (SUSTech). My research is in human–computer interaction, with a focus on shape-changing interfaces and social wearables that help people express their needs and boundaries in everyday interactions.</p>
             </section>
-
-            <section id="education">
-                <h2 class="section-title">Education</h2>
-                
-                <div class="card">
-                    <div class="card-layout">
-                        <img src="au.png" alt="Aarhus University" class="entity-logo">
-                        <div class="card-main">
-                            <div class="card-header">
-                                <h3 class="card-title">Aarhus University</h3>
-                                <span class="card-date">Aug 2024 - Aug 2026</span>
-                            </div>
-                            <p class="card-subtitle">Master of Computer Science</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-layout">
-                        <img src="nwpu.png" alt="NWPU" class="entity-logo">
-                        <div class="card-main">
-                            <div class="card-header">
-                                <h3 class="card-title">Northwestern Polytechnical University</h3>
-                                <span class="card-date">Sep 2020 - Jul 2024</span>
-                            </div>
-                            <p class="card-subtitle">Bachelor of Engineering in Software Engineering</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="experience">
-                <h2 class="section-title">Research Experience</h2>
-
-                <div class="card">
-                    <div class="card-layout">
-                        <img src="sustech.png" alt="Southern University of Science and Technology" class="entity-logo">
-                        <div class="card-main">
-                            <div class="card-header">
-                                <h3 class="card-title">X-Group, Southern University of Science and Technology</h3>
-                                <span class="card-date">Oct 2026 - Dec 2026</span>
-                            </div>
-                            <p class="card-subtitle">Visiting Student | Supervised by Assist. Prof. Xueliang Li</p>
-                            <p class="card-text">Focus on Shape-changing Interfaces, Social Wearables, and Inclusive Interaction Design.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-layout">
-                        <img src="BIG Lab.png" alt="Bristol Lab" class="entity-logo">
-                        <div class="card-main">
-                            <div class="card-header">
-                                <h3 class="card-title">Diverse-ability Interaction Lab, University of Bristol</h3>
-                                <span class="card-date">Jan 2026 - Aug 2026</span>
-                            </div>
-                            <p class="card-subtitle">Research Intern | Supervised by Assoc. Prof. Oussama Metatla</p>
-                            <p class="card-text">Focus on Shape-changing Interfaces, Soft Robotics for HCI, and Multisensory Interaction.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-layout">
-                        <img src="IML.png" alt="Aarhus Lab" class="entity-logo">
-                        <div class="card-main">
-                            <div class="card-header">
-                                <h3 class="card-title">Interactive Matter Lab, Aarhus University</h3>
-                                <span class="card-date">Oct 2024 - Apr 2025</span>
-                            </div>
-                            <p class="card-subtitle">Research Intern | Supervised by Assist. Prof. Michael Wessely</p>
-                            <p class="card-text">Focus on Bio-sensors and Health-related Interfaces.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="publications">
-                <h2 class="section-title">Publications</h2>
-
-                <div class="card">
-                    <h3 class="card-title" style="margin-bottom: 8px;">Demonstration of BIOral: Fabricating Intraoral PH Sensor for Continuous Health Monitoring</h3>
-                    <p class="card-text" style="color: var(--text-main);">Yijing Jiang, <strong>Junzhe Jin</strong>, Yunhui Song, Haiyang Xu, Michael Wessely</p>
-                    <p class="card-text" style="margin-bottom: 12px;"><em>Extended Abstracts of the CHI Conference on Human Factors in Computing Systems (CHI' EA) 2025</em></p>
-                    <a href="https://dl.acm.org/doi/full/10.1145/3706599.3721178" target="_blank" rel="noopener noreferrer" class="btn btn-primary">DOI</a>
-                </div>
-
-                <div class="card">
-                    <h3 class="card-title" style="margin-bottom: 8px;">A Study on the Development of Wordle Based on Machine Learning</h3>
-                    <p class="card-text" style="color: var(--text-main);"><strong>Junzhe Jin</strong>, Yitian Yin</p>
-                    <p class="card-text" style="margin-bottom: 12px;"><em>International Conference on Machine Learning, Algorithms and Artificial Intelligence (MLAAI) 2023</em></p>
-                    <a href="https://ieeexplore.ieee.org/abstract/document/10393779" target="_blank" rel="noopener noreferrer" class="btn btn-primary">DOI</a>
-                </div>
-            </section>
-
-        </main>
-    </div>
+        </div>
+    </main>
 
     <footer>
         <p>&copy; 2026 Junzhe JIN.</p>
